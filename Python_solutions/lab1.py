@@ -21,4 +21,15 @@ fahrenheit = (celsius * 9/5) + 32
 print(f"{celsius} degrees Celsius is equal to {fahrenheit} degrees Fahrenheit.")
 
 
-'''4-'''
+'''4-python program to find the area of a triangle whose sides are given'''
+import math
+
+a = float(input("Enter the length of the first side: "))
+b = float(input("Enter the length of the second side: "))
+c = float(input("Enter the length of the third side: "))
+
+s = (a + b + c) / 2
+
+area = math.sqrt(s * (s - a) * (s - b) * (s - c))
+
+print(f"The area of the triangle is: {area}")
